@@ -3,7 +3,7 @@ echo "If you encounter any problems, make sure you run with sudo privileges"
 wget -O Moonlight.AppImage https://github.com/moonlight-stream/moonlight-qt/releases/download/v2.2.0/Moonlight-2.2.0-x86_64.AppImage
 sudo mv ./Moonlight.AppImage /bin/Moonlight.AppImage
 sudo chmod +x /bin/Moonlight.AppImage
-sudo echo "/bin/Moonlight.AppImage $1 $2 $3 $4 $5" > moonlight
+sudo echo "/bin/Moonlight.AppImage" > moonlight
 sudo mv moonlight /bin/moonlight
 sudo chmod +x /bin/moonlight
 echo "Setup finished. If you encounter any errors make sure you run with sudo privileges, or in root"
@@ -12,3 +12,4 @@ read -rsn1 input
 if [ "$input" == "y" ]; then
 sudo rm -rf ~/MoonlightQT-UniversalInstaller
 fi
+cd
