@@ -2,7 +2,7 @@
 Download moonlight to any device running linux
 
 Run this command:
-cd MoonlightQT-UniversalInstaller && sudo chmod +x UniversalMoonlightInstaller && ./UnversalMoonlightIntaller 
+cd MoonlightQT-UniversalInstaller && sudo chmod +x UniversalMoonlightInstaller && ./UniversalMoonlightInstaller && cd
 
 
 If you encounter problems installing:
