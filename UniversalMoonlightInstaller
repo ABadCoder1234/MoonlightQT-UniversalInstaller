@@ -7,9 +7,15 @@ sudo echo "/bin/Moonlight.AppImage" > moonlight
 sudo mv moonlight /bin/moonlight
 sudo chmod +x /bin/moonlight
 echo "Setup finished. If you encounter any errors make sure you run with sudo privileges, or in root"
+echo "If setup succeded, run command moonlight to start" 
 echo "Delete downloaded directory? [y,n]"
 read -rsn1 input
 if [ "$input" == "y" ]; then
 sudo rm -rf ~/MoonlightQT-UniversalInstaller
 fi
 cd
+echo Start Moonlight?
+read -rsn1 input
+if [ "$input" == "y" ]; then
+moonlight
+fi
